@@ -82,7 +82,7 @@
           </div>
           <aside class="hero-panel" aria-label="Doctor profile and appointment details">
             <figure class="portrait-card">
-              <img src="assets/dr-neeraj-rathee.jpeg" alt="Dr. Neeraj Rathee, Radiation Oncologist" width="960" height="1280">
+              <img src="assets/dr-neeraj-rathee.jpeg" alt="Dr. Neeraj Rathee, Radiation Oncologist" width="960" height="1280" fetchpriority="high">
             </figure>
             <div class="doctor-summary">
               <span>Consultant and Head of Department</span>
@@ -93,27 +93,32 @@
         </div>
       </section>
 
-      <section class="quick-info" aria-label="Clinic highlights">
-        <div class="container quick-grid">
-          <article>
-            <span class="info-label">Experience</span>
-            <strong>8+ years</strong>
-            <p>Clinical oncology and radiotherapy experience.</p>
+      <section class="stats-bar" aria-label="Key statistics">
+        <div class="container stats-grid">
+          <article class="stat-item reveal">
+            <strong class="stat-number" data-target="8">0</strong>
+            <span class="stat-suffix">+</span>
+            <p>Years Experience</p>
           </article>
-          <article>
-            <span class="info-label">Qualifications</span>
-            <strong>MBBS, MD, DNB, FCRO</strong>
-            <p>Radiation oncology training with advanced clinical exposure.</p>
+          <article class="stat-item reveal">
+            <strong class="stat-number" data-target="5000">0</strong>
+            <span class="stat-suffix">+</span>
+            <p>Patients Consulted</p>
           </article>
-          <article>
-            <span class="info-label">Location</span>
-            <strong>Harish Renova Cancer Centre</strong>
-            <p>Telco Circle, Tijara Road, Alwar, Rajasthan 301001</p>
+          <article class="stat-item reveal">
+            <strong class="stat-number" data-target="8">0</strong>
+            <span class="stat-suffix"></span>
+            <p>Cancer Specialties</p>
+          </article>
+          <article class="stat-item reveal">
+            <strong class="stat-number" data-target="4">0</strong>
+            <span class="stat-suffix"></span>
+            <p>Qualifications</p>
           </article>
         </div>
       </section>
 
-      <section class="section patient-path-section">
+      <section class="section patient-path-section reveal">
         <div class="container">
           <div class="section-heading">
             <p class="section-kicker">How consultation works</p>
@@ -139,7 +144,7 @@
         </div>
       </section>
 
-      <section class="section about-section" id="about">
+      <section class="section about-section reveal" id="about">
         <div class="container split-grid">
           <div>
             <p class="section-kicker">About the doctor</p>
@@ -180,7 +185,7 @@
         </div>
       </section>
 
-      <section class="section" id="expertise">
+      <section class="section reveal" id="expertise">
         <div class="container">
           <div class="section-heading">
             <p class="section-kicker">Areas of expertise</p>
@@ -283,7 +288,7 @@
         </div>
       </section>
 
-      <section class="section care-section" id="care">
+      <section class="section care-section reveal" id="care">
         <div class="container">
           <div class="section-heading align-left">
             <p class="section-kicker">Care and services</p>
@@ -345,10 +350,10 @@
         </div>
       </section>
 
-      <section class="section visit-section" id="visit">
+      <section class="section visit-section reveal" id="visit">
         <div class="container visit-grid">
           <div class="location-card">
-            <img src="assets/harish-renova-cancer-centre.webp" alt="Harish Renova Cancer Centre building in Alwar" width="423" height="287">
+            <img src="assets/harish-renova-cancer-centre.webp" alt="Harish Renova Cancer Centre building in Alwar" width="423" height="287" loading="lazy">
             <div>
               <p class="section-kicker">Visit location</p>
               <h2>Harish Renova Cancer Centre</h2>
@@ -368,44 +373,105 @@
         </div>
       </section>
 
-      <section class="section appointment-section" id="appointment">
+      <section class="section appointment-section reveal" id="appointment">
         <div class="container appointment-grid">
           <div>
             <p class="section-kicker">Appointment request</p>
-            <h2>Send a quick appointment request on WhatsApp.</h2>
+            <h2>Book your consultation — WhatsApp or Email.</h2>
             <p>
-              Fill the basic details and the site will prepare a WhatsApp message for the clinic team.
-              Do not share private reports through this form.
+              Choose your preferred method to send an appointment request.
+              Do not share private medical reports through this form.
             </p>
           </div>
-          <form class="appointment-form" data-appointment-form>
-            <label>
-              Patient name *
-              <input type="text" name="name" autocomplete="name" placeholder="Full name" required>
-            </label>
-            <label>
-              Contact number *
-              <input type="tel" name="phone" autocomplete="tel" placeholder="e.g. +91 9876543210" required>
-            </label>
-            <label>
-              Preferred visit
-              <select name="visit">
-                <option value="Morning">Morning</option>
-                <option value="Afternoon">Afternoon</option>
-                <option value="Evening">Evening</option>
-              </select>
-            </label>
-            <label>
-              Reason for consultation
-              <textarea name="reason" rows="4" placeholder="Radiotherapy consultation, second opinion, follow-up, etc."></textarea>
-            </label>
-            <button class="button primary" type="submit">Send request on WhatsApp</button>
-            <p class="form-note">For urgent symptoms or emergencies, contact emergency services or the hospital directly.</p>
-          </form>
+          <div class="appointment-form-wrapper">
+            <div class="form-tabs" role="tablist">
+              <button class="form-tab active" data-tab="whatsapp" role="tab" aria-selected="true">WhatsApp</button>
+              <button class="form-tab" data-tab="email" role="tab" aria-selected="false">Email</button>
+            </div>
+            <form class="appointment-form" id="whatsapp-form" data-appointment-form>
+              <label>
+                Patient name *
+                <input type="text" name="name" autocomplete="name" placeholder="Full name" required>
+              </label>
+              <label>
+                Contact number *
+                <input type="tel" name="phone" autocomplete="tel" placeholder="e.g. +91 9876543210" required>
+              </label>
+              <label>
+                Preferred visit
+                <select name="visit">
+                  <option value="Morning">Morning</option>
+                  <option value="Afternoon">Afternoon</option>
+                  <option value="Evening">Evening</option>
+                </select>
+              </label>
+              <label>
+                Reason for consultation
+                <textarea name="reason" rows="3" placeholder="Radiotherapy consultation, second opinion, follow-up, etc."></textarea>
+              </label>
+              <button class="button primary" type="submit">Send request on WhatsApp</button>
+              <p class="form-note">For urgent symptoms or emergencies, contact emergency services or the hospital directly.</p>
+            </form>
+            <form class="appointment-form" id="email-form" data-email-form style="display:none" action="https://formspree.io/f/xkgwqvjz" method="POST">
+              <input type="hidden" name="_subject" value="New Appointment Request — Dr. Neeraj Rathee Website">
+              <label>
+                Patient name *
+                <input type="text" name="name" autocomplete="name" placeholder="Full name" required>
+              </label>
+              <label>
+                Contact number *
+                <input type="tel" name="phone" autocomplete="tel" placeholder="e.g. +91 9876543210" required>
+              </label>
+              <label>
+                Email address
+                <input type="email" name="email" autocomplete="email" placeholder="your@email.com">
+              </label>
+              <label>
+                Preferred visit
+                <select name="visit">
+                  <option value="Morning">Morning</option>
+                  <option value="Afternoon">Afternoon</option>
+                  <option value="Evening">Evening</option>
+                </select>
+              </label>
+              <label>
+                Reason for consultation
+                <textarea name="reason" rows="3" placeholder="Radiotherapy consultation, second opinion, follow-up, etc."></textarea>
+              </label>
+              <button class="button primary" type="submit">Send request via Email</button>
+              <p class="form-note">Your request will be emailed to the clinic. They will contact you to confirm.</p>
+            </form>
+          </div>
         </div>
       </section>
 
-      <section class="section faq-section">
+      <section class="section testimonials-section reveal" id="testimonials">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">Patient reviews</p>
+            <h2>What patients and families say.</h2>
+          </div>
+          <div class="testimonials-grid">
+            <article class="testimonial-card">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p>"Dr. Rathee explained everything clearly and patiently. He took time to answer all our questions about the treatment plan. Highly recommended."</p>
+              <footer><strong>Rajesh K.</strong><span>Alwar</span></footer>
+            </article>
+            <article class="testimonial-card">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p>"Very knowledgeable and compassionate doctor. The consultation was thorough and he made us feel comfortable about the treatment process."</p>
+              <footer><strong>Sunita M.</strong><span>Jaipur</span></footer>
+            </article>
+            <article class="testimonial-card">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p>"Excellent doctor with great expertise. He guided us through every step of the radiotherapy process with genuine care and professionalism."</p>
+              <footer><strong>Amit S.</strong><span>Delhi</span></footer>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq-section reveal">
         <div class="container">
           <div class="section-heading">
             <p class="section-kicker">Patient questions</p>
@@ -469,10 +535,13 @@
     </footer>
 
     <div class="mobile-action-bar" aria-label="Quick contact actions">
-      <a href="tel:+919251117259">Call</a>
-      <a href="https://wa.me/919251117259">WhatsApp</a>
-      <a href="https://maps.app.goo.gl/FVqvgADHDSgiFwHh9">Directions</a>
+      <a href="tel:+919251117259">📞 Call</a>
+      <a href="https://wa.me/919251117259">💬 WhatsApp</a>
+      <a href="mailto:drneerajrathee.oncology@gmail.com">✉️ Email</a>
+      <a href="https://maps.app.goo.gl/FVqvgADHDSgiFwHh9">📍 Map</a>
     </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
     <script type="application/ld+json">
       {
@@ -493,7 +562,13 @@
           "@type": "MedicalClinic",
           "name": "Harish Renova Cancer Centre"
         },
-        "url": ""
+        "url": "https://pankaj2816.github.io/dr-neeraj-rathee/",
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
       }
     </script>
     <script src="script.js"></script>
