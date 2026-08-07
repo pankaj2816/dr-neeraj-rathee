@@ -19,6 +19,13 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 130px;
+}
+
+section[id],
+div[id],
+main > section {
+  scroll-margin-top: 130px;
 }
 
 body {
@@ -431,13 +438,24 @@ h3 {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: 0 14px 35px rgba(16, 34, 42, 0.06);
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.path-grid article:hover {
+  transform: translateY(-4px);
+  border-color: var(--teal);
+  box-shadow: 0 20px 40px rgba(15, 108, 103, 0.12);
 }
 
 .path-grid span {
   display: inline-block;
   margin-bottom: 26px;
-  color: var(--gold);
+  color: var(--teal);
+  background: var(--soft);
+  padding: 4px 12px;
+  border-radius: 20px;
   font-weight: 800;
+  font-size: 13px;
 }
 
 .path-grid p {
@@ -477,6 +495,12 @@ h3 {
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.05);
+  transition: transform 220ms ease, background-color 220ms ease;
+}
+
+.credential-grid article:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.09);
 }
 
 .credential-grid span {
@@ -521,6 +545,13 @@ h3 {
     linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(237, 246, 242, 0.92));
   border: 1px solid var(--line);
   box-shadow: 0 14px 34px rgba(18, 33, 38, 0.06);
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.expertise-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(15, 108, 103, 0.35);
+  box-shadow: 0 22px 44px rgba(18, 33, 38, 0.12);
 }
 
 .expertise-visual {
@@ -533,6 +564,13 @@ h3 {
   background: #ffffff;
   border: 1px solid rgba(15, 108, 103, 0.16);
   border-radius: 50%;
+  transition: transform 220ms ease, background 220ms ease, color 220ms ease;
+}
+
+.expertise-card:hover .expertise-visual {
+  transform: scale(1.06);
+  background: var(--teal);
+  color: var(--white);
 }
 
 .expertise-visual svg {

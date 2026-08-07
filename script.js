@@ -22,11 +22,23 @@ if (appointmentForm) {
   appointmentForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
+    const submitBtn = appointmentForm.querySelector("button[type='submit']");
+    const originalText = submitBtn ? submitBtn.textContent : "";
+
     const formData = new FormData(appointmentForm);
     const name = String(formData.get("name") || "").trim();
     const phone = String(formData.get("phone") || "").trim();
     const visit = String(formData.get("visit") || "").trim();
     const reason = String(formData.get("reason") || "").trim();
+
+    if (submitBtn) {
+      submitBtn.textContent = "Opening WhatsApp...";
+      submitBtn.disabled = true;
+      setTimeout(() => {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      }, 2000);
+    }
 
     const message = [
       "Hello, I would like to request an appointment with Dr. Neeraj Rathee.",
