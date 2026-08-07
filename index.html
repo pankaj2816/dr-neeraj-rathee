@@ -31,15 +31,22 @@
     <header class="site-header" data-header>
       <div class="top-strip">
         <div class="container strip-inner">
-          <span>Consultations: Monday to Saturday, 8:00 AM - 8:00 PM</span>
-          <a href="tel:+919251117259">Call +91 92511 17259</a>
+          <span class="emergency-badge"><span class="pulse-dot"></span> Emergency: For urgent oncology care, call 102 or visit nearest ER</span>
+          <div class="top-strip-actions">
+            <span class="hours-label">Mon - Sat: 8:00 AM - 8:00 PM</span>
+            <div class="lang-selector">
+              <button class="lang-btn active" data-lang="en">EN</button>
+              <span class="lang-sep">|</span>
+              <button class="lang-btn" data-lang="hi" onclick="alert('Hindi translation coming soon!')">हिन्दी</button>
+            </div>
+          </div>
         </div>
       </div>
       <nav class="container nav" aria-label="Primary navigation">
         <a class="brand" href="#home" aria-label="Dr. Neeraj Rathee home">
           <span class="brand-mark">NR</span>
           <span>
-            <strong>Dr. Neeraj Rathee</strong>
+            <strong class="brand-name">Dr. Neeraj Rathee <span class="verified-badge" title="Medical Practitioner Verified">✓</span></strong>
             <small>Radiation Oncologist</small>
           </span>
         </a>
@@ -51,6 +58,7 @@
         <div class="nav-links" data-nav-links>
           <a href="#about">About</a>
           <a href="#expertise">Expertise</a>
+          <a href="#suitability">Check Suitability</a>
           <a href="#care">Care</a>
           <a href="#appointment">Appointment</a>
           <a href="#visit">Visit</a>
@@ -288,6 +296,166 @@
         </div>
       </section>
 
+      <section class="section suitability-checker-section reveal" id="suitability">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">Patient Assessment Tool</p>
+            <h2>Treatment Suitability Checker</h2>
+            <p>Select a cancer site to learn how radiotherapy is typically used in the treatment plan.</p>
+          </div>
+          <div class="suitability-wrapper">
+            <div class="suitability-sidebar">
+              <button class="suitability-btn active" data-site="breast">Breast Cancer</button>
+              <button class="suitability-btn" data-site="headneck">Head & Neck Cancers</button>
+              <button class="suitability-btn" data-site="lung">Thoracic (Lung) Cancers</button>
+              <button class="suitability-btn" data-site="brain">Brain Tumors</button>
+              <button class="suitability-btn" data-site="prostate">Prostate & Urinary Cancers</button>
+              <button class="suitability-btn" data-site="palliative">Advanced Care (Palliative)</button>
+            </div>
+            <div class="suitability-content">
+              <!-- Breast -->
+              <div class="suitability-panel active" id="suitability-breast">
+                <h3>Radiotherapy for Breast Cancer</h3>
+                <p>Radiotherapy is a standard component of breast-conserving treatment and is also recommended after mastectomy for selected high-risk cases.</p>
+                <div class="suitability-details-grid">
+                  <div class="detail-box">
+                    <strong>Common Roles:</strong>
+                    <ul>
+                      <li>Adjuvant therapy (after surgery to prevent recurrence)</li>
+                      <li>Breast-conserving surgery follow-up (lumpectomy)</li>
+                      <li>Post-mastectomy radiation for advanced stages</li>
+                    </ul>
+                  </div>
+                  <div class="detail-box">
+                    <strong>Key Reports Needed:</strong>
+                    <ul>
+                      <li>Post-surgery histopathology report</li>
+                      <li>ER, PR, Her2Neu receptor status</li>
+                      <li>Biopsy and staging scans (CT/PET-CT)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Head & Neck -->
+              <div class="suitability-panel" id="suitability-headneck" style="display:none;">
+                <h3>Radiotherapy for Head & Neck Cancers</h3>
+                <p>Radiotherapy is a primary treatment modality for many head and neck tumors, either alone or combined with chemotherapy, to preserve speech and swallowing functions.</p>
+                <div class="suitability-details-grid">
+                  <div class="detail-box">
+                    <strong>Common Roles:</strong>
+                    <ul>
+                      <li>Definitive treatment (primary cure)</li>
+                      <li>Concurrent Chemoradiotherapy (CCRT)</li>
+                      <li>Post-operative radiotherapy for advanced nodes</li>
+                    </ul>
+                  </div>
+                  <div class="detail-box">
+                    <strong>Key Reports Needed:</strong>
+                    <ul>
+                      <li>Biopsy/Histopathology report</li>
+                      <li>Contrast MRI or Contrast CT of face/neck</li>
+                      <li>Whole body staging (PET-CT)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Lung -->
+              <div class="suitability-panel" id="suitability-lung" style="display:none;">
+                <h3>Radiotherapy for Lung Cancers</h3>
+                <p>Radiotherapy plays a vital role in both Small Cell and Non-Small Cell lung cancers, ranging from curative intent to managing symptoms like airway blockage or pain.</p>
+                <div class="suitability-details-grid">
+                  <div class="detail-box">
+                    <strong>Common Roles:</strong>
+                    <ul>
+                      <li>Concurrent or sequential chemoradiotherapy</li>
+                      <li>Stereotactic Body Radiotherapy (SBRT) for early stages</li>
+                      <li>Prophylactic Cranial Irradiation (PCI)</li>
+                    </ul>
+                  </div>
+                  <div class="detail-box">
+                    <strong>Key Reports Needed:</strong>
+                    <ul>
+                      <li>Bronchoscopy / biopsy report</li>
+                      <li>PET-CT Scan</li>
+                      <li>Pulmonary Function Tests (PFT)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Brain -->
+              <div class="suitability-panel" id="suitability-brain" style="display:none;">
+                <h3>Radiotherapy for Brain Tumors</h3>
+                <p>Radiation is used to treat both primary brain tumors (like Gliomas) and metastatic brain lesions, focusing on tumor control while protecting critical brain functions.</p>
+                <div class="suitability-details-grid">
+                  <div class="detail-box">
+                    <strong>Common Roles:</strong>
+                    <ul>
+                      <li>Post-operative radiation (following resection)</li>
+                      <li>Stereotactic Radiosurgery (SRS) for small lesions</li>
+                      <li>Whole Brain Radiotherapy (WBRT)</li>
+                    </ul>
+                  </div>
+                  <div class="detail-box">
+                    <strong>Key Reports Needed:</strong>
+                    <ul>
+                      <li>Brain MRI (Pre & Post-Surgery)</li>
+                      <li>Surgical histopathology & IHC molecular markers</li>
+                      <li>Post-op discharge summary</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Prostate -->
+              <div class="suitability-panel" id="suitability-prostate" style="display:none;">
+                <h3>Radiotherapy for Prostate & Urinary Cancers</h3>
+                <p>Highly targeted radiation serves as an effective curative alternative to surgical removal for localized prostate cancer and bladder preservation plans.</p>
+                <div class="suitability-details-grid">
+                  <div class="detail-box">
+                    <strong>Common Roles:</strong>
+                    <ul>
+                      <li>Definitive External Beam Radiotherapy (EBRT)</li>
+                      <li>Androgen Deprivation Therapy (ADT) combination</li>
+                      <li>Salvage radiotherapy after prostatectomy</li>
+                    </ul>
+                  </div>
+                  <div class="detail-box">
+                    <strong>Key Reports Needed:</strong>
+                    <ul>
+                      <li>Serum PSA levels (serial tracking)</li>
+                      <li>Prostate biopsy & Gleason Score</li>
+                      <li>MRI pelvis / PSMA PET-CT</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Palliative -->
+              <div class="suitability-panel" id="suitability-palliative" style="display:none;">
+                <h3>Palliative Radiotherapy</h3>
+                <p>Short-course radiation therapy is extremely effective at relieving symptoms, reducing bone pain, controlling bleeding, and improving quality of life for advanced cancer cases.</p>
+                <div class="suitability-details-grid">
+                  <div class="detail-box">
+                    <strong>Common Roles:</strong>
+                    <ul>
+                      <li>Pain relief for painful bone metastases</li>
+                      <li>Decompression for spinal cord compression</li>
+                      <li>Control of bleeding or respiratory symptoms</li>
+                    </ul>
+                  </div>
+                  <div class="detail-box">
+                    <strong>Key Reports Needed:</strong>
+                    <ul>
+                      <li>Primary histopathology</li>
+                      <li>Imaging of the symptomatic site (X-Ray/MRI/CT)</li>
+                      <li>Current medications & pain control log</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section care-section reveal" id="care">
         <div class="container">
           <div class="section-heading align-left">
@@ -358,7 +526,10 @@
               <p class="section-kicker">Visit location</p>
               <h2>Harish Renova Cancer Centre</h2>
               <p>Telco Circle, Tijara Road, Alwar, Rajasthan 301001</p>
-              <a class="text-link" href="https://maps.app.goo.gl/FVqvgADHDSgiFwHh9">Open Google Maps</a>
+              <div class="map-container">
+                <iframe src="https://maps.google.com/maps?q=Harish%20Renova%20Cancer%20Centre%20Alwar&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="220" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+              <a class="text-link" href="https://maps.app.goo.gl/FVqvgADHDSgiFwHh9" target="_blank" rel="noopener">Open in Google Maps App ↗</a>
             </div>
           </div>
           <div class="visit-panel">
@@ -412,7 +583,7 @@
               <button class="button primary" type="submit">Send request on WhatsApp</button>
               <p class="form-note">For urgent symptoms or emergencies, contact emergency services or the hospital directly.</p>
             </form>
-            <form class="appointment-form" id="email-form" data-email-form style="display:none" action="https://formspree.io/f/xkgwqvjz" method="POST">
+            <form class="appointment-form" id="email-form" data-email-form style="display:none" action="https://formspree.io/drneerajrathee.oncology@gmail.com" method="POST">
               <input type="hidden" name="_subject" value="New Appointment Request — Dr. Neeraj Rathee Website">
               <label>
                 Patient name *

@@ -199,3 +199,27 @@ if (sections.length > 0 && navAnchorLinks.length > 0) {
 
   sections.forEach(sec => activeNavObserver.observe(sec));
 }
+
+// 9. Interactive Suitability Checker Tabs
+const suitabilityButtons = document.querySelectorAll(".suitability-btn");
+const suitabilityPanels = document.querySelectorAll(".suitability-panel");
+
+if (suitabilityButtons.length > 0 && suitabilityPanels.length > 0) {
+  suitabilityButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      suitabilityButtons.forEach(b => b.classList.remove("active"));
+      suitabilityPanels.forEach(p => {
+        p.style.display = "none";
+        p.classList.remove("active");
+      });
+
+      btn.classList.add("active");
+      const targetSite = btn.getAttribute("data-site");
+      const targetPanel = document.getElementById(`suitability-${targetSite}`);
+      if (targetPanel) {
+        targetPanel.style.display = "block";
+        targetPanel.classList.add("active");
+      }
+    });
+  });
+}
