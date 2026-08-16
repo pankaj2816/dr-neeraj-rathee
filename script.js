@@ -77,14 +77,40 @@ if (whatsappForm) {
   });
 }
 
-// 4. Email Form Submit Feedback Handler
+// 4. Email Form Submit Action (mailto fallback)
 if (emailForm) {
-  emailForm.addEventListener("submit", () => {
+  emailForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    
     const submitBtn = emailForm.querySelector("button[type='submit']");
     if (submitBtn) {
-      submitBtn.textContent = "Sending Email...";
+      submitBtn.textContent = "Opening Email App...";
       submitBtn.disabled = true;
     }
+    
+    // Gather data
+    const name = emailForm.querySelector("input[name='name']").value;
+    const phone = emailForm.querySelector("input[name='phone']").value;
+    const message = emailForm.querySelector("textarea[name='message']").value;
+    
+    // Construct email
+    const emailAddress = "drneerajrathee.oncology@gmail.com";
+    const subject = encodeURIComponent("New Appointment Request — Dr. Neeraj Rathee Website");
+    const body = encodeURIComponent(
+      `Patient Name: ${name}\nContact Number: ${phone}\n\nMessage:\n${message}\n\n---\nSent via dr-neeraj-rathee website.`
+    );
+    
+    // Open email client
+    window.location.href = `mailto:${emailAddress}?subject=${subject}&body=${body}`;
+    
+    // Reset button after short delay
+    setTimeout(() => {
+      if (submitBtn) {
+        submitBtn.textContent = "Send Request via Email";
+        submitBtn.disabled = false;
+      }
+      emailForm.reset();
+    }, 2000);
   });
 }
 

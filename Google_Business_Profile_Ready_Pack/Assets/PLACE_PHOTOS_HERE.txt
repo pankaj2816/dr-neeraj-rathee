@@ -1,0 +1,4 @@
+Place the doctor's approved original photographs in this folder using the file
+names listed in ../02_Photo_Asset_Checklist.txt.
+
+Do not place passwords, OTPs, patient records or private identity documents here.

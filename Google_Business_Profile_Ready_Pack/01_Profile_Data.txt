@@ -1,0 +1,85 @@
+GOOGLE BUSINESS PROFILE - MASTER DATA SHEET
+
+STATUS: [ ] Draft  [ ] Doctor approved  [ ] Ready to publish
+Approval date:
+Approved by:
+
+IDENTITY
+Exact profile name:
+Doctor's full professional name:
+Clinic/brand name, if applicable:
+Primary category:
+Additional categories:
+Opening month and year:
+
+CONTACT
+Primary local phone:
+Secondary phone (optional):
+Website URL (add later if not available):
+Appointment URL (optional):
+
+LOCATION
+Address line 1:
+Address line 2:
+Locality/city:
+State:
+PIN code:
+Country:
+Google Maps coordinates or dropped-pin link:
+Is there permanent signage at this address? Yes/No:
+Can patients visit during stated hours? Yes/No:
+
+HOURS
+Monday:
+Tuesday:
+Wednesday:
+Thursday:
+Friday:
+Saturday:
+Sunday:
+Break hours, if applicable:
+Special/holiday hours:
+
+PROFILE DETAILS
+Short business description (use approved version from 03_Content_Templates.txt):
+
+Languages spoken:
+Accessibility attributes:
+Amenities/parking information:
+Online appointments available? Yes/No:
+
+SERVICES
+1. Service name:
+   Short factual description:
+   Price (optional):
+
+2. Service name:
+   Short factual description:
+   Price (optional):
+
+3. Service name:
+   Short factual description:
+   Price (optional):
+
+Additional services:
+
+EXISTING PROFILE CHECK
+Search performed using doctor name + city? Yes/No:
+Search performed using clinic name + city? Yes/No:
+Search performed using phone number? Yes/No:
+Existing Maps/Profile URL:
+Profile status: None / Unclaimed / Claimed / Ownership required:
+Current owner known? Yes/No:
+
+ACCOUNT OWNERSHIP
+Client Google account email (email only; never record password):
+Primary Owner:
+Manager email to invite after setup:
+
+CONSISTENCY CHECK
+Name matches signage and documents: Yes/No:
+Address is exact and patient-facing: Yes/No:
+Phone reaches this clinic/location: Yes/No:
+Hours are patient-facing hours: Yes/No:
+All details approved by doctor: Yes/No:
+

@@ -817,6 +817,23 @@ h3 {
   cursor: pointer;
   color: var(--deep);
   font-weight: 800;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none; /* Hide default arrow */
+}
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+.faq-list summary::after {
+  content: "+";
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--teal);
+  transition: transform 0.3s ease;
+}
+.faq-list details[open] summary::after {
+  transform: rotate(45deg);
 }
 
 .faq-list p {

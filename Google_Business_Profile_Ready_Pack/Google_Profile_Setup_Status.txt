@@ -1,0 +1,79 @@
+GOOGLE BUSINESS PROFILE SETUP STATUS
+Doctor: Dr. Neeraj Rathee
+Google account used: drneerajonco@gmail.com
+Date: 2026-07-11
+
+COMPLETED IN GOOGLE
+-------------------
+[x] Created Google Business Profile draft for Dr. Neeraj Rathee
+[x] Category set to Oncologist
+[x] Address added:
+    Harish Renova Cancer Centre, Telco Circle, Tijara Road,
+    Alwar, Rajasthan 301001
+[x] Map pin confirmed in Google flow
+[x] Phone added: +91-9877787259
+[x] Hours added:
+    Monday to Saturday: 8:00 AM - 8:00 PM
+    Sunday: Closed
+[x] Business description added
+[x] Service added: Radiotherapy
+[x] Ads offer skipped
+[x] Google Workspace/domain trial skipped
+[x] Verification deferred using Verify Later
+
+CURRENT GOOGLE STATUS
+---------------------
+Dashboard checked while logged into drneerajonco@gmail.com on 2026-07-22:
+Google shows: "Verification not successful. To get verified, submit another recording."
+The verification flow shows "Select a way to get verified" with "Submit a business video"
+as the available method. Expanding "More options" only shows "Verify Later"; no phone,
+email, postcard, or document-upload option was visible.
+
+Public web search checked on 2026-07-22:
+The managed Google Search page shows the existing Harish Renova Cancer Centre profile
+as managed by this account, with 43 Google reviews and a 4.8 rating. The profile still
+requires verification before full owner/manager actions are available.
+
+Diagnostic note added on 2026-07-31:
+User reported the resubmitted verification failed again and that review emails for the
+existing Harish Renova Cancer Centre profile are arriving at drneerajonco@gmail.com.
+This strongly suggests the account is managing or attempting to verify the existing
+hospital/centre Business Profile, not a clean standalone Dr. Neeraj Rathee practitioner
+profile. For a doctor practitioner profile, Google guidelines require the practitioner
+profile name to include only the practitioner's name, not the organization name, unless
+the practitioner is the sole public-facing practitioner at a branded location.
+
+REMAINING TASKS
+---------------
+[ ] Resolve profile identity before resubmitting verification
+    Confirm inside Google Business Profile Manager whether the selected profile name is:
+    - "Harish Renova Cancer Centre" (hospital/centre profile), or
+    - "Dr. Neeraj Rathee" (doctor practitioner profile).
+    Do not keep resubmitting video until this is confirmed, because the evidence needed
+    for a centre profile and an individual practitioner profile is different.
+
+[ ] Resubmit Google verification only after profile identity is correct
+    Current available method shown by Google: Submit a Business Video
+    Video file received:
+    D:\Doctor_Website\Google_Business_Profile_Ready_Pack\Assets\Dr_Neeraj_video_verification.mp4
+    Duration: 00:02:14
+    Size: 11.6 MB
+    Important: The Google verification screen currently says "Do not submit pre-recorded videos"
+    and shows a "Start recording" button. This means the saved MP4 is useful as a reference,
+    but Google likely requires recording the verification video live from the browser/mobile device.
+    Current review status on 2026-07-22: Verification not successful; submit another recording.
+
+[ ] Upload photos manually in Google profile:
+    D:\Doctor_Website\Google_Business_Profile_Ready_Pack\Assets\Dr_Neeraj_Profile_Photo.jpeg
+    D:\Doctor_Website\Google_Business_Profile_Ready_Pack\Assets\Harish_Hospital_Exterior.webp
+
+[ ] Add website later after the doctor website is ready
+
+NOTES FOR VIDEO VERIFICATION
+----------------------------
+Google asked for a business video. The video should normally show:
+- Outside location/signboard
+- Clinic/hospital entrance
+- Interior/reception/consultation area if allowed
+- Proof the doctor/owner/manager can access the business location
+- No patient-private information visible

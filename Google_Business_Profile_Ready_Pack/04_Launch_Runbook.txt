@@ -1,0 +1,60 @@
+GOOGLE BUSINESS PROFILE - LAUNCH RUNBOOK
+
+PHASE 1 - BEFORE CREATION
+[ ] Doctor has approved 01_Profile_Data.txt
+[ ] Search Google and Maps by doctor name, clinic name, phone and address
+[ ] Confirm no duplicate profile should be claimed instead
+[ ] Decide practitioner/clinic naming according to the real-world setup
+[ ] Confirm permanent signage and patient-facing location
+[ ] Collect and review genuine photos
+[ ] Client is signed in to the Google account that will own the profile
+
+PHASE 2 - CREATE OR CLAIM
+[ ] Go to https://business.google.com/add
+[ ] Add a new profile only if no suitable profile exists
+[ ] Otherwise use "Own this business?" / "Claim this business"
+[ ] Enter the exact approved real-world name
+[ ] Select the most accurate primary category
+[ ] Enter accurate address/pin, phone and patient-facing hours
+[ ] Add services, description and photos without keyword stuffing
+
+PHASE 3 - VERIFY
+[ ] Use only the verification option Google offers
+[ ] If video is requested, show location, signage, interior and authority/access
+[ ] Keep supporting documents available, but do not publish them as photos
+[ ] Do not make unnecessary major edits while verification is pending
+[ ] Record the submission date and status below
+
+Verification method offered:
+Verification submitted:
+Status/result:
+Support case ID, if any:
+
+PHASE 4 - AFTER VERIFICATION
+[ ] Recheck name, category, address, map pin, phone and hours
+[ ] Upload approved logo, cover, doctor and clinic photos
+[ ] Add approved services and attributes
+[ ] Add website and appointment links when available
+[ ] Create a genuine review link and provide it to real patients only
+[ ] Add special hours before holidays
+[ ] Invite the developer using profile access; keep client as Primary Owner
+[ ] Save the live Maps/Profile URL below
+
+Live profile URL:
+Public review link:
+Launch date:
+
+PHASE 5 - ONGOING CARE
+[ ] Respond to reviews without revealing patient information
+[ ] Upload fresh, genuine photographs periodically
+[ ] Keep hours, phone, services and links accurate
+[ ] Check suggested edits and profile notifications
+[ ] Never buy, fabricate or reward reviews
+[ ] Never create duplicate profiles for extra specialties
+[ ] Never add keywords to the name unless they are part of the genuine name
+
+IMPORTANT EXPECTATION
+Google Business Profile is free, but Google controls verification, visibility
+and the appearance of Search/Maps results. Verification does not guarantee that
+a knowledge panel will appear for every query or that the profile will rank first.
+

@@ -1,0 +1,143 @@
+GOOGLE BUSINESS PROFILE - FINAL PUBLISH DATA
+Doctor: Dr. Neeraj Rathee
+Status: Ready for Google entry - final doctor/owner review still recommended
+
+Use this file while filling the Google Business Profile form.
+
+
+1) PROFILE NAME
+---------------
+Dr. Neeraj Rathee
+
+Note:
+User originally typed "Radiation Oncologistm"; corrected to "Radiation Oncologist".
+
+
+2) CLINIC / HOSPITAL NAME
+-------------------------
+Harish Renova Cancer Centre
+
+
+3) PRIMARY CATEGORY
+-------------------
+Recommended:
+Oncologist
+
+If Google offers it, also consider:
+Radiation Oncologist
+
+
+4) PUBLIC PHONE / WHATSAPP
+--------------------------
+Public phone:
++91-9877787259
+
+WhatsApp:
++91-9877787259
+
+
+5) EMAIL
+--------
+Email:
+drneerajonco@gmail.com
+
+Visibility:
+Keep private. Do not publish publicly on Google profile unless the doctor later approves.
+
+
+6) ADDRESS
+----------
+Harish Renova Cancer Center,
+Telco Circle, Tijara Road,
+Alwar, Rajasthan 301001,
+India
+
+Important note:
+The confirmed clinic name uses "Centre", but the provided address line uses "Center". Before final verification, match this spelling with the real-world signage/documents. Google prefers the real-world name and address exactly as displayed.
+
+
+7) GOOGLE MAPS PIN
+------------------
+https://maps.app.goo.gl/FVqvgADHDSgiFwHh9
+
+
+8) HOURS
+--------
+Monday: 8:00 AM - 8:00 PM
+Tuesday: 8:00 AM - 8:00 PM
+Wednesday: 8:00 AM - 8:00 PM
+Thursday: 8:00 AM - 8:00 PM
+Friday: 8:00 AM - 8:00 PM
+Saturday: 8:00 AM - 8:00 PM
+Sunday: Closed
+
+
+9) APPOINTMENT TYPE
+-------------------
+Both appointment and walk-in
+
+
+10) SERVICE TO ADD NOW
+----------------------
+Service name:
+Radiotherapy
+
+Service description:
+Radiotherapy consultation and treatment planning for suitable cancer cases after clinical evaluation by the doctor.
+
+Note:
+More services can be added later after doctor confirmation.
+
+
+11) PUBLIC BUSINESS DESCRIPTION
+-------------------------------
+Dr. Neeraj Rathee is a Radiation Oncologist practicing at Harish Renova Cancer Centre, Alwar. He holds MBBS, MD Radiation Oncology, DNB Radiation Oncology and FCRO qualifications, with additional clinical training in pain and palliative care medicine and particle therapy. His clinical areas include radiotherapy planning and oncology care for suitable cancer cases after specialist evaluation. Consultations are available Monday to Saturday, 8:00 AM to 8:00 PM, at Harish Renova Cancer Centre, Telco Circle, Tijara Road, Alwar.
+
+
+12) SHORT BIO
+-------------
+Dr. Neeraj Rathee is a Radiation Oncologist with 8+ years of clinical experience. He has trained at Government Medical College and Hospital, Chandigarh, Tata Medical Center, Kolkata, and NIRS-QST, Japan. He currently practices at Harish Renova Cancer Centre, Alwar.
+
+
+13) PHOTOS READY
+----------------
+Saved in:
+D:\Doctor_Website\Google_Business_Profile_Ready_Pack\Assets
+
+Current photos:
+Dr_Neeraj_Profile_Photo.jpeg
+Harish_Hospital_Exterior.webp
+
+Recommended later:
+Add exterior photo with clear "Harish Renova Cancer Centre" signage, if available.
+Add reception/waiting area photo.
+Add consultation room photo.
+Add logo, if available.
+
+
+14) GOOGLE ACCOUNT FOR OWNERSHIP
+--------------------------------
+Primary owner email:
+drneerajonco@gmail.com
+
+Never share or store the password.
+
+
+15) VERIFICATION STATUS
+-----------------------
+Verification will be completed after all information is entered.
+
+Doctor/clinic owner should be ready for:
+Phone OTP, email OTP, video verification, or business proof, depending on what Google asks.
+
+
+16) FINAL BEFORE-PUBLISH CHECK
+------------------------------
+[ ] Check if an existing Google profile already exists for Dr. Neeraj Rathee or Harish Renova Cancer Centre.
+[ ] Use the confirmed Google Maps pin.
+[ ] Upload doctor profile photo.
+[ ] Upload hospital exterior photo.
+[ ] Add only "Radiotherapy" as service for now.
+[ ] Keep email private.
+[ ] Use doctor email as profile owner.
+[ ] Complete Google verification.
