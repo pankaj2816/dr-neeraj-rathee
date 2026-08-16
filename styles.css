@@ -1553,11 +1553,11 @@ h3 {
 }
 
 .hub-main-tab {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 12px 24px;
   border-radius: 30px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--deep);
   font-weight: 600;
   font-size: 15px;
   cursor: pointer;
@@ -1565,8 +1565,9 @@ h3 {
 }
 
 .hub-main-tab:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: var(--white);
+  background: rgba(15, 108, 103, 0.05);
+  color: var(--teal);
+  border-color: var(--teal);
 }
 
 .hub-main-tab.active {
