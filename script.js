@@ -66,7 +66,7 @@ if (whatsappForm) {
     }
 
     const message = [
-      "Hello, I would like to request an appointment with Dr. Neeraj Rathee.",
+      "Hello, I would like to request an appointment with Dr. Neeraj Kumar Rathee.",
       name ? `Patient name: ${name}` : "",
       phone ? `Contact number: ${phone}` : "",
       visit ? `Preferred visit time: ${visit}` : "",
