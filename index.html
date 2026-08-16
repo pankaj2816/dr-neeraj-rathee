@@ -601,7 +601,11 @@
               <p class="form-note">For urgent symptoms or emergencies, contact emergency services or the hospital directly.</p>
             </form>
             
-            <form class="appointment-form" id="email-form" data-email-form style="display:none">
+            <form class="appointment-form" id="email-form" data-email-form style="display:none" action="https://formsubmit.co/drneerajrathee.oncology@gmail.com" method="POST">
+              <!-- Prevent formsubmit from showing Captcha (optional but better UX) -->
+              <input type="hidden" name="_captcha" value="false">
+              <!-- Redirect back to the site after submission -->
+              <input type="hidden" name="_next" value="https://pankaj2816.github.io/dr-neeraj-rathee/">
               <input type="hidden" name="_subject" value="New Appointment Request — Dr. Neeraj Rathee Website">
               <label>Patient name *<input type="text" name="name" autocomplete="name" placeholder="Full name" required></label>
               <label>Contact number *<input type="tel" name="phone" autocomplete="tel" placeholder="e.g. +91 9876543210" required></label>
