@@ -223,3 +223,22 @@ if (suitabilityButtons.length > 0 && suitabilityPanels.length > 0) {
     });
   });
 }
+
+// 10. Floating Action Button (FAB) Toggle
+const fabToggle = document.getElementById("fabToggle");
+const fabMenu = document.getElementById("fabMenu");
+
+if (fabToggle && fabMenu) {
+  fabToggle.addEventListener("click", () => {
+    fabToggle.classList.toggle("open");
+    fabMenu.classList.toggle("open");
+  });
+
+  // Close when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!fabToggle.contains(e.target) && !fabMenu.contains(e.target)) {
+      fabToggle.classList.remove("open");
+      fabMenu.classList.remove("open");
+    }
+  });
+}

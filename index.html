@@ -23,6 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -704,11 +705,24 @@
       </div>
     </footer>
 
-    <div class="mobile-action-bar" aria-label="Quick contact actions">
-      <a href="tel:+919251117259">📞 Call</a>
-      <a href="https://wa.me/919251117259">💬 WhatsApp</a>
-      <a href="mailto:drneerajrathee.oncology@gmail.com">✉️ Email</a>
-      <a href="https://www.google.com/maps/place/Dr+Neeraj+Kumar+Rathee/@27.5970288,76.6261542,17z/data=!3m1!4b1!4m6!3m5!1s0x3972990ca4b90171:0xf5c01101c3cedfa1!8m2!3d27.5970241!4d76.6287291!16s%2Fg%2F11zh70lzff?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D">📍 Map</a>
+    <div class="fab-container">
+      <button class="fab-main" id="fabToggle" aria-label="Quick Actions">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <div class="fab-menu" id="fabMenu">
+        <a href="https://www.google.com/maps/place/Dr+Neeraj+Kumar+Rathee/@27.5970288,76.6261542,17z/data=!3m1!4b1!4m6!3m5!1s0x3972990ca4b90171:0xf5c01101c3cedfa1!8m2!3d27.5970241!4d76.6287291!16s%2Fg%2F11zh70lzff?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D" aria-label="Map" title="Location Map">
+          <i class="fa-solid fa-location-dot"></i>
+        </a>
+        <a href="mailto:drneerajrathee.oncology@gmail.com" aria-label="Email" title="Email Us">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://wa.me/919251117259" aria-label="WhatsApp" title="WhatsApp Us">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:+919251117259" aria-label="Call" title="Call Us">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+      </div>
     </div>
 
     <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
