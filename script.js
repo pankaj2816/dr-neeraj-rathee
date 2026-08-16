@@ -242,3 +242,122 @@ if (fabToggle && fabMenu) {
     }
   });
 }
+
+// 11. Clinical Hub Tab Switching
+const hubTabs = document.querySelectorAll(".hub-main-tab");
+const hubPanels = document.querySelectorAll(".hub-panel");
+
+if (hubTabs.length > 0 && hubPanels.length > 0) {
+  hubTabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      // Remove active from all tabs & panels
+      hubTabs.forEach(t => t.classList.remove("active"));
+      hubPanels.forEach(p => {
+        p.style.display = "none";
+        p.classList.remove("active");
+      });
+
+      // Set active
+      tab.classList.add("active");
+      const targetId = tab.getAttribute("data-target");
+      const targetPanel = document.getElementById(targetId);
+      
+      if (targetPanel) {
+        targetPanel.style.display = "block";
+        // Small delay to allow display:block to apply before adding class for animation
+        setTimeout(() => targetPanel.classList.add("active"), 10);
+      }
+    });
+  });
+}
+
+// 12. Swiper Carousel Initialization
+if (typeof Swiper !== 'undefined') {
+  // Studies and Experience Swiper
+  new Swiper('.credential-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.credential-next',
+      prevEl: '.credential-prev',
+    },
+    pagination: {
+      el: '.credential-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      }
+    }
+  });
+
+  // Testimonials Swiper
+  new Swiper('.testimonials-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 24,
+    navigation: {
+      nextEl: '.testimonials-next',
+      prevEl: '.testimonials-prev',
+    },
+    pagination: {
+      el: '.testimonials-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      }
+    }
+  });
+}
+
+// 13. Modal Toggle Logic
+const modalBtns = document.querySelectorAll('.open-modal-btn');
+const appointmentModal = document.getElementById('appointmentModal');
+const closeModalBtn = document.getElementById('closeModal');
+
+if (appointmentModal) {
+  const openModal = (e) => {
+    e.preventDefault();
+    appointmentModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeModal = () => {
+    appointmentModal.classList.remove('active');
+    document.body.style.overflow = '';
+  };
+
+  modalBtns.forEach(btn => btn.addEventListener('click', openModal));
+  if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+
+  // Close on outside click
+  appointmentModal.addEventListener('click', (e) => {
+    if (e.target === appointmentModal) {
+      closeModal();
+    }
+  });
+}
+
+// 14. ScrollReveal Initialization
+if (typeof ScrollReveal !== 'undefined') {
+  const sr = ScrollReveal({
+    distance: '30px',
+    duration: 800,
+    easing: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)',
+    reset: false
+  });
+
+  sr.reveal('.hero-intro, .hero-badges', { origin: 'bottom', interval: 100, delay: 200 });
+  sr.reveal('.section-heading', { origin: 'bottom', delay: 100 });
+  sr.reveal('.hub-tabs-nav', { origin: 'bottom', delay: 200 });
+  sr.reveal('.testimonial-card', { origin: 'bottom', interval: 150 });
+  sr.reveal('.faq-list details', { origin: 'bottom', interval: 100 });
+}
