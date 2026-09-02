@@ -65,12 +65,15 @@ if (whatsappForm) {
       }, 2000);
     }
 
+    const isHindi = document.documentElement.lang === "hi";
+    const msgBase = isHindi ? "नमस्ते, मैं डॉ. नीरज कुमार राठी के साथ अपॉइंटमेंट लेना चाहता/चाहती हूँ।" : "Hello, I would like to request an appointment with Dr. Neeraj Kumar Rathee.";
+    
     const message = [
-      "Hello, I would like to request an appointment with Dr. Neeraj Kumar Rathee.",
-      name ? `Patient name: ${name}` : "",
-      phone ? `Contact number: ${phone}` : "",
-      visit ? `Preferred visit time: ${visit}` : "",
-      reason ? `Reason: ${reason}` : "",
+      msgBase,
+      name ? (isHindi ? `मरीज का नाम: ${name}` : `Patient name: ${name}`) : "",
+      phone ? (isHindi ? `संपर्क नंबर: ${phone}` : `Contact number: ${phone}`) : "",
+      visit ? (isHindi ? `पसंदीदा यात्रा का समय: ${visit}` : `Preferred visit time: ${visit}`) : "",
+      reason ? (isHindi ? `कारण: ${reason}` : `Reason: ${reason}`) : "",
     ].filter(Boolean).join("\n");
 
     window.open(`https://wa.me/919251117259?text=${encodeURIComponent(message)}`, "_blank", "noopener");
