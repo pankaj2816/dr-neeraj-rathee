@@ -13,10 +13,22 @@ if (menuToggle && navLinks) {
   });
 
   navLinks.addEventListener("click", (event) => {
-    if (event.target instanceof HTMLAnchorElement) {
+    const link = event.target.closest("a");
+    if (link) {
       navLinks.classList.remove("is-open");
       menuToggle.setAttribute("aria-expanded", "false");
       menuToggle.setAttribute("aria-label", "Open menu");
+
+      // Smooth scroll without adding # to URL
+      const hash = link.getAttribute("href");
+      if (hash && hash.startsWith("#") && hash.length > 1) {
+        event.preventDefault();
+        const target = document.querySelector(hash);
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
+          history.replaceState(null, "", window.location.pathname);
+        }
+      }
     }
   });
 }
